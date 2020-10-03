@@ -1,0 +1,24 @@
+@import "colors";
+@import "layout";
+@import "button";
+.carousel {
+    min-height: 600px;
+    h1 {
+        @include heroTitle;
+
+        span {
+            color: $secondaryColor;
+        }
+    }
+    p {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        @include subHeroTitle;
+    }
+    .btn-buy-now {
+        @include btnPrimary;
+    }
+    .btn-show-other {
+        @include btnSecondary;
+    }
+}

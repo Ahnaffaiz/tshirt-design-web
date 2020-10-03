@@ -1,0 +1,80 @@
+@import "colors";
+$source : 'Source Sans Pro','sans-serif';
+$poppins : 'Poppins';
+
+
+@mixin heroTitle {
+    font-family: 'Source Sans Pro','sans-serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+};
+
+@mixin subHeroTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: '600';
+    font-size: 18px;
+    color: white;
+}
+
+@mixin title {
+    h2 {
+        font-size: 36px;
+        font-family: $poppins;
+        font-weight: 600;
+        color: $mainColor;
+        span {
+            color: $titleColor;
+        }
+    }
+    p {
+        font-family: $poppins;
+        font-size: 16px;
+        color: $smothgrey;
+        font-weight: lighter;
+    }
+}
+
+@mixin products {
+    h5 {
+        font-family: $poppins;
+        font-weight: 600;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    p {
+        font-family: $poppins;
+        font-weight: bold;
+        font-size: 14px;
+        color: $success;
+        span {
+            font-size: 12px;
+            font-weight: lighter;
+            color: $smothgrey;
+            text-decoration: line-through;
+        }
+    }
+
+}
+
+@mixin promosi {
+    font-family: $source;
+    color: white;
+    font-weight: bold;
+    h4 {
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 70px;
+        text-transform: uppercase;
+        color: $secondaryColor;
+    }
+    p {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: $poppins;
+    }
+}

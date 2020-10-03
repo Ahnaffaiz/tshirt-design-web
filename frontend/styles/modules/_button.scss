@@ -1,0 +1,23 @@
+@import "layout";
+@import "colors";
+
+@mixin btnPrimary {
+    background-color: $secondaryColor;
+    color: white;
+    font-family: $poppins;
+    font-weight: 600;
+    &:hover {
+        background-color:#FFD84D;
+        color: white;
+    }
+}
+
+@mixin btnSecondary {
+    background-color: rgba(249, 198, 21, 0.1);
+    color: $secondaryColor;
+    &:hover {
+        background-color: #634E02;
+        font-family: $poppins;
+        font-weight: 600;
+    }
+}
