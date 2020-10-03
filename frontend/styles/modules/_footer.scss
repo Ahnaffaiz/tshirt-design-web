@@ -3,4 +3,11 @@
 footer {
     @include footer;
     background-color: $secondMain;
+    .copyright {
+        background-color: $mainColor;
+        p {
+            color: white;
+            font-weight: normal;
+        }
+    }
 }
