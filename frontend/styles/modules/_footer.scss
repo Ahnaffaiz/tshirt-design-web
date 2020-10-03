@@ -1,0 +1,6 @@
+@import "layout";
+@import "colors";
+footer {
+    @include footer;
+    background-color: $secondMain;
+}

@@ -60,21 +60,50 @@ $poppins : 'Poppins';
 }
 
 @mixin promosi {
-    font-family: $source;
-    color: white;
-    font-weight: bold;
+    
     h4 {
+        font-family: $source;
+        color: white;
+        font-weight: bold;
         text-transform: uppercase;
         font-size: 40px;
     }
     h2 {
-        font-size: 70px;
+        font-family: $source;
+        color: white;
+        font-weight: bold;
+        font-size: 60px;
         text-transform: uppercase;
         color: $secondaryColor;
     }
     p {
+        color: white;
         font-size: 14px;
-        font-weight: normal;
+        font-weight: lighter;
         font-family: $poppins;
+    }
+}
+
+@mixin footer {
+    p {
+        font-family: $poppins;
+        font-weight: lighter;
+        font-size: 14px;
+        color: white;
+    }
+    a {
+        font-family: $poppins;
+        font-weight: lighter;
+        font-size: 16px;
+        color: white;
+
+        span {
+            font-weight: bold;
+        }
+    }
+    h5 {
+        font-size: 40px;
+        font-family: $poppins;
+        color: white;
     }
 }
