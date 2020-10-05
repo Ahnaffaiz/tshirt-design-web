@@ -1,0 +1,61 @@
+@import "layout";
+@import "colors";
+
+.breadcrumb {
+    margin-top: 70px;
+    @include breadcumb;
+}
+.cart {
+    margin-bottom: 44px;
+    @include table;
+    margin-top: 70px;
+    h3 {
+        font-family: $poppins;
+    }
+    .qty {
+        a:hover {
+            text-decoration: none;
+        }
+        .minus {
+            display: block;
+            float: left;
+            width: 30px;
+            height: 30px;
+            border: 1px solid $smothgrey;
+            text-align: center;
+            font-size: 12;
+            color: $mainColor;
+            box-sizing: border-box;
+            border-radius: 8px 0px 0px 8px;
+    
+        }
+        .plus {
+            display: block;
+            float: left;
+            width: 30px;
+            height: 30px;
+            border: 1px solid $smothgrey;
+            text-align: center;
+            font-size: 12;
+            color: $mainColor;
+            box-sizing: border-box;
+            border-radius: 0px 8px 8px 0px;
+    
+        }
+        .qty-input {
+            display: block;
+            float: left;
+            width: 30px;
+            height: 30px;
+            border: 1px solid $smothgrey;
+            text-align: center;
+            font-size: 12;
+            color: $mainColor;
+            box-sizing: border-box;
+            border-radius: 0px;
+    
+            
+    
+        }
+    }
+}

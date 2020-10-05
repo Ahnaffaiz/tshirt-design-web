@@ -34,6 +34,7 @@ $poppins : 'Poppins';
         font-size: 16px;
         color: $smothgrey;
         font-weight: lighter;
+        
     }
 }
 
@@ -49,6 +50,7 @@ $poppins : 'Poppins';
         font-weight: bold;
         font-size: 14px;
         color: $success;
+        margin-top: 0.6em; margin-bottom: 0em;
         span {
             font-size: 12px;
             font-weight: lighter;
@@ -107,3 +109,29 @@ $poppins : 'Poppins';
         color: white;
     }
 }
+
+@mixin breadcumb {
+    .breadcrumb-item {
+        font-family: $poppins;
+        color: $smothgrey;
+        font-weight: normal;
+    }
+    .active {
+        font-family: $poppins;
+        color: $mainColor;
+        font-weight: bold;
+    }
+}
+
+@mixin table {
+    .table {
+        th {
+            font-family: $poppins;
+            font-weight: bold;
+            color: $mainColor;
+        }
+        border-radius: 8px;
+        @include products;
+    }
+}
+

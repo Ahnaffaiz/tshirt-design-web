@@ -99,6 +99,8 @@
   font-weight: bold;
   font-size: 14px;
   color: #02B714;
+  margin-top: 0.6em;
+  margin-bottom: 0em;
 }
 
 .featured-products .product-items p span {
@@ -212,5 +214,121 @@ footer .copyright {
 footer .copyright p {
   color: white;
   font-weight: normal;
+}
+
+.breadcrumb {
+  margin-top: 70px;
+}
+
+.breadcrumb .breadcrumb-item {
+  font-family: "Poppins";
+  color: #bdbdbd;
+  font-weight: normal;
+}
+
+.breadcrumb .active {
+  font-family: "Poppins";
+  color: #282828;
+  font-weight: bold;
+}
+
+.cart {
+  margin-bottom: 44px;
+  margin-top: 70px;
+}
+
+.cart .table {
+  border-radius: 8px;
+}
+
+.cart .table th {
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #282828;
+}
+
+.cart .table h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.cart .table p {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 14px;
+  color: #02B714;
+  margin-top: 0.6em;
+  margin-bottom: 0em;
+}
+
+.cart .table p span {
+  font-size: 12px;
+  font-weight: lighter;
+  color: #bdbdbd;
+  text-decoration: line-through;
+}
+
+.cart h3 {
+  font-family: "Poppins";
+}
+
+.cart .qty a:hover {
+  text-decoration: none;
+}
+
+.cart .qty .minus {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  font-size: 12;
+  color: #282828;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.cart .qty .plus {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  font-size: 12;
+  color: #282828;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.cart .qty .qty-input {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  font-size: 12;
+  color: #282828;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 /*# sourceMappingURL=main.css.map */
