@@ -109,3 +109,11 @@
 .service-active {
     @include ekspedisi-active;
 }
+.btn-checkout {
+    @include btnPrimary;
+}
+
+.img-active {
+    border: solid 3px $blue;
+    border-radius: 8px;
+}

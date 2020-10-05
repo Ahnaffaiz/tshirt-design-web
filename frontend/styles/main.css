@@ -202,7 +202,7 @@ footer a span {
 }
 
 footer h5 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Poppins";
   color: white;
 }
@@ -475,6 +475,23 @@ footer .copyright p {
   font-family: "Poppins";
 }
 
+.btn-checkout {
+  background-color: #F9C615;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.btn-checkout:hover {
+  background-color: #FFD84D;
+  color: white;
+}
+
+.img-active {
+  border: solid 3px #2f80ed;
+  border-radius: 8px;
+}
+
 .navbar-alternative {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -490,5 +507,10 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 3;
 }
 /*# sourceMappingURL=main.css.map */

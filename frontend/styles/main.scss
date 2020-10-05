@@ -17,3 +17,8 @@ margin: 0;
 input[type=number] {
 -moz-appearance: textfield;
 }
+
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 3;
+}
