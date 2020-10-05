@@ -1,0 +1,67 @@
+@import "layout";
+@import "colors";
+@import "button";
+
+.breadcrumb {
+    margin-top: 70px;
+    @include breadcumb;
+}
+.whislist {
+    margin-bottom: 44px;
+    @include table;
+    margin-top: 70px;
+    h3 {
+        font-family: $poppins;
+        font-size: 20px;
+    }
+    .qty {
+        a:hover {
+            text-decoration: none;
+        }
+        .minus {
+            display: block;
+            float: left;
+            width: 24px;
+            height: 24px;
+            border: 1px solid $smothgrey;
+            text-align: center;
+            font-size: 14px;
+            color: $mainColor;
+            box-sizing: border-box;
+            border-radius: 8px 0px 0px 8px;
+    
+        }
+        .plus {
+            display: block;
+            float: left;
+            width: 24px;
+            height: 24px;
+            border: 1px solid $smothgrey;
+            text-align: center;
+            font-size: 14px;
+            color: $mainColor;
+            box-sizing: border-box;
+            border-radius: 0px 8px 8px 0px;
+    
+        }
+        .qty-input {
+            display: block;
+            float: left;
+            width: 24px;
+            height: 24px;
+            border: 1px solid $smothgrey;
+            text-align: center;
+            font-size: 14px;
+            color: $mainColor;
+            box-sizing: border-box;
+            border-radius: 0px;
+    
+            
+    
+        }
+    }
+}
+
+.btn-add-to-cart {
+    @include btnPrimary;
+}

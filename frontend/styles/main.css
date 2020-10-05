@@ -492,6 +492,125 @@ footer .copyright p {
   border-radius: 8px;
 }
 
+.breadcrumb {
+  margin-top: 70px;
+}
+
+.breadcrumb .breadcrumb-item {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #bdbdbd;
+  font-weight: lighter;
+}
+
+.breadcrumb .active {
+  font-family: "Poppins";
+  color: #282828;
+  font-weight: normal;
+}
+
+.whislist {
+  margin-bottom: 44px;
+  margin-top: 70px;
+}
+
+.whislist .table {
+  border-radius: 8px;
+}
+
+.whislist .table th {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  color: #282828;
+}
+
+.whislist .table h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.whislist .table p {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 14px;
+  color: #02B714;
+  margin-top: 0.6em;
+  margin-bottom: 0em;
+}
+
+.whislist .table p span {
+  font-size: 12px;
+  font-weight: lighter;
+  color: #bdbdbd;
+  text-decoration: line-through;
+}
+
+.whislist h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.whislist .qty a:hover {
+  text-decoration: none;
+}
+
+.whislist .qty .minus {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  font-size: 14px;
+  color: #282828;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.whislist .qty .plus {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  font-size: 14px;
+  color: #282828;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.whislist .qty .qty-input {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  font-size: 14px;
+  color: #282828;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px;
+}
+
+.btn-add-to-cart {
+  background-color: #F9C615;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #FFD84D;
+  color: white;
+}
+
 .navbar-alternative {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
