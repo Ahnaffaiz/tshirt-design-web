@@ -113,13 +113,14 @@ $poppins : 'Poppins';
 @mixin breadcumb {
     .breadcrumb-item {
         font-family: $poppins;
+        font-size: 14px;
         color: $smothgrey;
-        font-weight: normal;
+        font-weight: lighter;
     }
     .active {
         font-family: $poppins;
         color: $mainColor;
-        font-weight: bold;
+        font-weight: normal;
     }
 }
 
@@ -127,11 +128,57 @@ $poppins : 'Poppins';
     .table {
         th {
             font-family: $poppins;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 16px;
             color: $mainColor;
         }
         border-radius: 8px;
         @include products;
     }
 }
+
+@mixin  ekspedisi {
+    h5 {
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    p {
+        font-family: $poppins;
+        font-weight: 300;
+        color: $smothgrey;
+        font-size: 12px;
+    }
+    .text-price{
+        font-size: 12px;
+        color: $success;
+        font-weight: bold;
+        font-family: $poppins;
+    }
+}
+
+@mixin ekspedisi-active {
+    .card {
+        border: $blue 2px solid;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+        h5 {
+            font-family: $poppins;
+            font-weight: 600;
+            color: $blue;
+            font-size: 14px;
+        }
+        p {
+            font-family: $poppins;
+            font-weight: 300;
+            color: $smothgrey;
+            font-size: 12px;
+        }
+        .text-price{
+            font-size: 12px;
+            color: $success;
+            font-weight: bold;
+            font-family: $poppins;
+        }
+    }
+} 
 

@@ -11,6 +11,7 @@
     margin-top: 70px;
     h3 {
         font-family: $poppins;
+        font-size: 20px;
     }
     .qty {
         a:hover {
@@ -19,11 +20,11 @@
         .minus {
             display: block;
             float: left;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             border: 1px solid $smothgrey;
             text-align: center;
-            font-size: 12;
+            font-size: 14px;
             color: $mainColor;
             box-sizing: border-box;
             border-radius: 8px 0px 0px 8px;
@@ -32,11 +33,11 @@
         .plus {
             display: block;
             float: left;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             border: 1px solid $smothgrey;
             text-align: center;
-            font-size: 12;
+            font-size: 14px;
             color: $mainColor;
             box-sizing: border-box;
             border-radius: 0px 8px 8px 0px;
@@ -45,11 +46,11 @@
         .qty-input {
             display: block;
             float: left;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             border: 1px solid $smothgrey;
             text-align: center;
-            font-size: 12;
+            font-size: 14px;
             color: $mainColor;
             box-sizing: border-box;
             border-radius: 0px;
@@ -58,4 +59,53 @@
     
         }
     }
+}
+.card-right {
+    .payment   {
+        font-family: $poppins;
+        th {
+            color: $smothgrey;            
+            font-weight: 300;
+        }
+        td {
+            color: $mainColor;
+            font-weight: normal;
+        }
+        input {
+            ::placeholder {
+                color: $smothgrey;
+            }
+        }
+    }
+    .btn-aply {
+        @include btnPrimary;
+    }
+    .card-expired {
+        background-color: $smothred;
+        p { 
+            font-weight: normal;
+            font-size: 12px;
+            margin-top: 0.6em; margin-bottom: 0em;
+            color: $mainColor;
+
+            span {
+                color: $red;
+            }
+        }
+    }
+}
+
+.ekspedisi {
+    @include ekspedisi;
+}
+.ekspedisi-active {
+    @include ekspedisi-active;
+}
+
+.service {
+    @include ekspedisi;
+}
+
+.service-active {
+    @include ekspedisi-active;
 }

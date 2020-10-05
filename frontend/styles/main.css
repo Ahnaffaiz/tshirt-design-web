@@ -222,14 +222,15 @@ footer .copyright p {
 
 .breadcrumb .breadcrumb-item {
   font-family: "Poppins";
+  font-size: 14px;
   color: #bdbdbd;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 .breadcrumb .active {
   font-family: "Poppins";
   color: #282828;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .cart {
@@ -243,7 +244,8 @@ footer .copyright p {
 
 .cart .table th {
   font-family: "Poppins";
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 16px;
   color: #282828;
 }
 
@@ -272,6 +274,7 @@ footer .copyright p {
 
 .cart h3 {
   font-family: "Poppins";
+  font-size: 20px;
 }
 
 .cart .qty a:hover {
@@ -281,11 +284,11 @@ footer .copyright p {
 .cart .qty .minus {
   display: block;
   float: left;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border: 1px solid #bdbdbd;
   text-align: center;
-  font-size: 12;
+  font-size: 14px;
   color: #282828;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -295,11 +298,11 @@ footer .copyright p {
 .cart .qty .plus {
   display: block;
   float: left;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border: 1px solid #bdbdbd;
   text-align: center;
-  font-size: 12;
+  font-size: 14px;
   color: #282828;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -309,15 +312,172 @@ footer .copyright p {
 .cart .qty .qty-input {
   display: block;
   float: left;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border: 1px solid #bdbdbd;
   text-align: center;
-  font-size: 12;
+  font-size: 14px;
   color: #282828;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0px;
+}
+
+.card-right .payment {
+  font-family: "Poppins";
+}
+
+.card-right .payment th {
+  color: #bdbdbd;
+  font-weight: 300;
+}
+
+.card-right .payment td {
+  color: #282828;
+  font-weight: normal;
+}
+
+.card-right .payment input ::-webkit-input-placeholder {
+  color: #bdbdbd;
+}
+
+.card-right .payment input :-ms-input-placeholder {
+  color: #bdbdbd;
+}
+
+.card-right .payment input ::-ms-input-placeholder {
+  color: #bdbdbd;
+}
+
+.card-right .payment input ::placeholder {
+  color: #bdbdbd;
+}
+
+.card-right .btn-aply {
+  background-color: #F9C615;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.card-right .btn-aply:hover {
+  background-color: #FFD84D;
+  color: white;
+}
+
+.card-right .card-expired {
+  background-color: #FDF3F5;
+}
+
+.card-right .card-expired p {
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 0.6em;
+  margin-bottom: 0em;
+  color: #282828;
+}
+
+.card-right .card-expired p span {
+  color: #F50000;
+}
+
+.ekspedisi h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ekspedisi p {
+  font-family: "Poppins";
+  font-weight: 300;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.ekspedisi .text-price {
+  font-size: 12px;
+  color: #02B714;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.ekspedisi-active .card {
+  border: #2f80ed 2px solid;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.ekspedisi-active .card h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #2f80ed;
+  font-size: 14px;
+}
+
+.ekspedisi-active .card p {
+  font-family: "Poppins";
+  font-weight: 300;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.ekspedisi-active .card .text-price {
+  font-size: 12px;
+  color: #02B714;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.service h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.service p {
+  font-family: "Poppins";
+  font-weight: 300;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.service .text-price {
+  font-size: 12px;
+  color: #02B714;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.service-active .card {
+  border: #2f80ed 2px solid;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.service-active .card h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #2f80ed;
+  font-size: 14px;
+}
+
+.service-active .card p {
+  font-family: "Poppins";
+  font-weight: 300;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.service-active .card .text-price {
+  font-size: 12px;
+  color: #02B714;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.navbar-alternative {
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* Chrome, Safari, Edge, Opera */

@@ -14,7 +14,7 @@
 <body>
     <!-- navbar -->
     <div class="container-fluid">
-        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white navbar-alternative">
             <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
                 <a href="index.html" class="navbar-brand">
                     <img src="frontend/images/logo-dark.png" alt="">
@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col-lg-8 pl-lg-0">
                     <h3>Cart</h3>
-                    <div class="card card-cart">
+                    <div class="card card-cart mb-2">
                         <table class="table">
                             <thead class="thead-light">
                                 <tr>
@@ -132,82 +132,162 @@
                 </div>
                 <div class="col-lg-4">
                     <h3>Payment</h3>
-                    <div class="card card-cart">
-                        <table class="table">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Size</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">
-                                        <a href="#"><img src="frontend/images/ic_remove.png" alt=""></a>
-                                    </td>
-                                    <td class="align-middle">
-                                        <img src="frontend/images/product-thumb/item-1.png" alt="">
-                                    </td>
-                                    <td class="align-middle">Men T-Shirt Gre</td>
-                                    <td class="align-middle"><p> Rp 162.500 </p></td>
-                                    <td class="align-middle">
-                                        <div class="qty">
-                                            <a href="#" class="minus px-2">-</a>
-                                            <input type="number" value="1" size="4" class="qty-input">
-                                            <a href="#" class="plus">+</a>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle">
-                                        L
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="align-middle">
-                                        <a href="#"><img src="frontend/images/ic_remove.png" alt=""></a>
-                                    </td>
-                                    <td class="align-middle">
-                                        <img src="frontend/images/product-thumb/item-2.png" alt="">
-                                    </td>
-                                    <td class="align-middle">3Second New </td>
-                                    <td class="align-middle"><p> Rp 210.000 </p></td>
-                                    <td class="align-middle">
-                                        <div class="qty">
-                                            <a href="#" class="minus px-2">-</a>
-                                            <input type="number" value="1" size="4" class="qty-input">
-                                            <a href="#" class="plus">+</a>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle">
-                                        L
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="align-middle">
-                                        <a href="#"><img src="frontend/images/ic_remove.png" alt=""></a>
-                                    </td>
-                                    <td class="align-middle">
-                                        <img src="frontend/images/product-thumb/item-3.png" alt="">
-                                    </td>
-                                    <td class="align-middle">Men T-Shirt Gre 2</td>
-                                    <td class="align-middle"><p> Rp 320.500 </p></td>
-                                    <td class="align-middle">
-                                        <div class="qty">
-                                            <a href="#" class="minus px-2">-</a>
-                                            <input type="number" value="1" size="4" class="qty-input">
-                                            <a href="#" class="plus">+</a>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle">
-                                        L
-                                    </td>
-                                </tr>
-                            </tbody>
+                    <div class="card card-cart card-right p-3">
+                        <table class="table payment table-sm table-borderless">
+                            <tr>
+                                <th width="50%">Transaction Code</th>
+                                <td width="50%" class="text-right">V99062</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th width="50%" class="text-center">
+                                    <input type="text" class="form-control mx-3" placeholder="COUPON CODE">
+                                </th>
+                                <td class="align-middle mx-2">
+                                    <button class="ml-3 px-3 btn btn-aply btn-sm">
+                                        Apply
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th width="50%">Order Summary</th>
+                                <td width="50%" class="text-right">Rp 855.500</td>
+                            </tr>
+                            <tr>
+                                <th width="50%">Additional Service</th>
+                                <td width="50%" class="text-right">Rp 10.000</td>
+                            </tr>
+                            <tr>
+                                <th width="50%">Total Amount</th>
+                                <td width="50%" class="text-right" class="total-amount" style="font-weight: bold;color: #380093;">Rp 865.5000</td>
+                            </tr>
                         </table>
+                        <hr style="border-bottom:1px dashed #e0e0e0" class="mx-2">
+                        <div class="card align-self-center border-light mb-2 card-expired px-2 pb-1">
+                            <p>SALE EXPIRING IN : <span>71 HOURSE 59 MINUTES</span></p>    
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-8 pl-lg-0">
+                    <h3>Shipping</h3>
+                    <div class="row my-3">
+                        <div class="col-lg-6 col-md-6 ekspedisi-active mb-2">
+                            <div class="card">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-3">
+                                        <img src="frontend/images/ekspedisi/jne 1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-5">
+                                        <h5>JNE Express</h5>
+                                        <p>Expected Delivery: Friday, 28</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-price">Rp 27.500</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 ekspedisi">
+                            <div class="card">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-3">
+                                        <img src="frontend/images/ekspedisi/pos kilat 1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-5">
+                                        <h5>POS Kilat</h5>
+                                        <p>Expected Delivery: Friday, 28</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-price">Rp 25.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-lg-6 col-md-6 ekspedisi ">
+                            <div class="card mb-2">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-3">
+                                        <img src="frontend/images/ekspedisi/J&T 1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-5">
+                                        <h5>JNT Express</h5>
+                                        <p>Expected Delivery: Friday, 28</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-price">Rp 20.500</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 ekspedisi">
+                            <div class="card">
+                                <div class="row align-items-center p-2">
+                                    <div class="col-3">
+                                        <img src="frontend/images/ekspedisi/tiki 1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-5">
+                                        <h5>TIKI Express</h5>
+                                        <p>Expected Delivery: Friday, 28</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-price">Rp 23.500</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pl-lg-0">
+                    <h3>Additional Service</h3>
+                    <div class="service-active my-3">
+                        <div class="card p-2">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h5>Care Package</h5>
+                                    <p>One year of additional care</p>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <p class="text-price">Rp 10.000</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="service my-3">
+                        <div class="card p-2">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h5>Environment Friendly</h5>
+                                    <p>Add some tip for each care</p>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <p class="text-price">Rp 2.000</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="service my-3">
+                        <div class="card p-2">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h5>Golden Guard</h5>
+                                    <p>30 days more for return</p>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <p class="text-price">Rp 2.000</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
