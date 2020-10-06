@@ -64,10 +64,13 @@ body {
   font-size: 14px;
 }
 
-@media (min-width: 992px) {
-  .section__product-list {
-    border-left: 0.1rem #DFDFDF solid;
-  }
+.h1__product-list {
+  font-weight: 400;
+}
+
+.grid__product-filter .sortby__product-filter::after {
+  content: "—";
+  padding-left: 0.5rem;
 }
 
 @media (min-width: 320px) {
@@ -88,9 +91,10 @@ body {
     font-size: 1rem;
   }
 }
-.grid__product-filter .sortby__product-filter::after {
-  content: "—";
-  padding-left: 0.5rem;
+@media (min-width: 992px) {
+  .section__product-list {
+    border-left: 0.1rem #DFDFDF solid;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

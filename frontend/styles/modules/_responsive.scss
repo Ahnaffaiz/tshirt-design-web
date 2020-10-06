@@ -1,0 +1,25 @@
+@media (min-width: 320px) {
+    .grid__product-filter {
+        grid-template-columns: 0.5fr 1fr 2fr ;
+        * {
+        align-self: center;
+        justify-content: center;
+        font-size: 14px;
+        }
+    }
+  }
+
+@media (min-width:640px) {
+    .grid__product-filter {
+        grid-template-columns: 1fr 2fr 6fr ;
+        * {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .section__product-list {
+        border-left: 0.1rem $smooth-gray solid;
+    }
+}

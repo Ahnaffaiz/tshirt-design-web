@@ -63,29 +63,12 @@
   font-size: 14px;
 }
 
-// Product List
-.section__product-list {
-  @media (min-width: 992px) {
-    border-left: 0.1rem $smooth-gray solid;
-  }
+.h1__product-list {
+  font-weight: 400;
 }
 
 // Product Filter
 .grid__product-filter {
-  @media (min-width: 320px) {
-    grid-template-columns: 0.5fr 1fr 2fr ;
-    * {
-      align-self: center;
-      justify-content: center;
-      font-size: 14px;
-    }
-  }
-  @media (min-width:640px) {
-    grid-template-columns: 1fr 2fr 6fr ;
-    * {
-      font-size: 1rem;
-    }
-  }
   .sortby__product-filter::after {
     content: '—';
     padding-left: 0.5rem;
