@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TShirtHome - The Biggest Tshirt Store</title>
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="frontend/images/ic_logo.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/styles/style.css">
+    <link rel="stylesheet" href="frontend/styles/main.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Own JS -->
+    <script src="js/script.js"></script>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top navbar__shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="frontend/images/logo-dark.png" alt="Logo TSHIRTHOME">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="navbar-toggler-icon"></i>
+        </button>
+        <nav class="collapse navbar-collapse" id="navbarNav">
+          <!-- Centered Nav -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Wishlist</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <!-- Lefted Nav -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="#">
+                <i class="fa fa-search"></i>
+              </a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="#">
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-user-circle"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="mt-5 mb-5">
+      <div class="container pt-5 pb-5">
+        <div class="row pt-5">
+          <!-- Product List -->
+          <section class="col-lg-8 ml-lg-5 pl-lg-5 order-lg-2 mb-5 section__product-list">
+            <header class="d-flex flex-wrap flex-sm-row flex-column justify-content-sm-between justify-content-center mb-3">
+              <h1 class="align-items-center text-sm-left text-center mb-sm-0 mb-3 display-4">Shopping</h1>
+              <div class="align-items-center btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-light border pl-4 pr-4 active">
+                  <input type="radio" name="sex-filter" autocomplete="off" checked> All
+                </label>
+                <label class="btn btn-light border pl-4 pr-4">
+                  <input type="radio" name="sex-filter" autocomplete="off"> Men
+                </label>
+                <label class="btn btn-light border pl-4 pr-4">
+                  <input type="radio" name="sex-filter" autocomplete="off"> Women
+                </label>
+              </div>
+            </header>
+            <!-- Product Filter -->
+            <div class="col-md-7 col-sm-8 col-10 pl-0 d-grid grid__product-filter">
+              <span class="align-items-center"><i class="fa fa-filter"></i></span>
+              <span class="align-items-center sortby__product-filter">Sort by</span>
+              <select class="custom-select border-0 font-weight-bold select__product-filter">
+                <option value="high-low" selected>Price high to low</option>
+                <option value="low-high">Price low to high</option>
+                <option value="popular">Popular</option>
+                <option value="newest">Newest</option>
+                <option value="latest">Latest</option>
+              </select>
+            </div>
+            
+          </section>
+          <!-- Product Filter -->
+          <aside class="col-lg-3 order-lg-1">
+            <form action="#" method="post">
+              <!-- Search Form -->
+              <div class="form-group mb-5">
+                <input type="text" name="Search" placeholder="Search" class="form-control">
+              </div>
+              <!-- Price Filter -->
+              <div class="form-group mb-5">
+                <h6 class="h6__search-filter mb-3"><strong>Price</strong></h6>
+                <div class="d-grid grid__price-filter mb-2">
+                  <input name="min-price" type="number" min="1000" class="form-control" placeholder="Min">
+                  <span>-</span>
+                  <input name="max-price" type="number" min="1000" class="form-control" placeholder="Max">
+                </div>
+                <button class="btn btn-filter w-100">Apply</button>
+              </div>
+              <!-- Categories Filter -->
+              <div class="form-group mb-5">
+                <h6 class="h6__search-filter mb-3"><strong>Categories</strong></h6>
+                <div class="d-grid grid__shirt-categories">
+                  <input class="" type="checkbox" value="O" name="shirt-categories">
+                  <label class="form-check-label color-secondary-title label__shirt-categories" for="shirt-categories">
+                    T-Shirt O-Neck
+                  </label>
+                  <span class="label__shirt-categories p-1 rounded bg-smooth-gray">
+                    1230
+                  </span>
+                </div>
+                <div class="d-grid grid__shirt-categories">
+                  <input class="" type="checkbox" value="V" name="shirt-categories">
+                  <label class="form-check-label color-secondary-title label__shirt-categories" for="shirt-categories">
+                    T-Shirt V-Neck
+                  </label>
+                  <span class="label__shirt-categories p-1 rounded bg-smooth-gray">
+                    542
+                  </span>
+                </div>
+                <div class="d-grid grid__shirt-categories">
+                  <input class="" type="checkbox" value="U" name="shirt-categories">
+                  <label class="form-check-label color-secondary-title label__shirt-categories" for="shirt-categories">
+                    T-Shirt U-Neck
+                  </label>
+                  <span class="label__shirt-categories p-1 rounded bg-smooth-gray">
+                    326
+                  </span>
+                </div>
+                <div class="d-grid grid__shirt-categories">
+                  <input class="" type="checkbox" value="Y" name="shirt-categories">
+                  <label class="form-check-label color-secondary-title label__shirt-categories" for="shirt-categories">
+                    T-Shirt Y-Neck
+                  </label>
+                  <span class="label__shirt-categories p-1 rounded bg-smooth-gray">
+                    324
+                  </span>
+                </div>
+                <div class="d-grid grid__shirt-categories">
+                  <input class="" type="checkbox" value="Turtleneck" name="shirt-categories">
+                  <label class="form-check-label color-secondary-title label__shirt-categories" for="shirt-categories">
+                    Turtleneck
+                  </label>
+                  <span class="label__shirt-categories p-1 rounded bg-smooth-gray">
+                    90
+                  </span>
+                </div>
+                <div class="d-grid grid__shirt-categories">
+                  <input class="" type="checkbox" value="Raglan" name="shirt-categories">
+                  <label class="form-check-label color-secondary-title label__shirt-categories" for="shirt-categories">
+                    Raglan
+                  </label>
+                  <span class="label__shirt-categories p-1 rounded bg-smooth-gray">
+                    658
+                  </span>
+                </div>
+                <div class="d-grid grid__shirt-categories">
+                  <input class="" type="checkbox" value="Polo" name="shirt-categories">
+                  <label class="form-check-label color-secondary-title label__shirt-categories" for="shirt-categories">
+                    Polo
+                  </label>
+                  <span class="label__shirt-categories p-1 rounded bg-smooth-gray">
+                    3957
+                  </span>
+                </div>
+              </div>
+              <!-- Brand Filter -->
+              <div class="form-group mb-5">
+                <h6 class="h6__search-filter mb-3"><strong>Brand</strong></h6>
+                <div class="d-grid grid__brand-categories">
+                  <input class="" type="checkbox" value="3Second" name="brand-categories">
+                  <label class="form-check-label color-secondary-title label__brand-categories" for="brand-categories">
+                    3Second
+                  </label>
+                  <span class="label__brand-categories p-1 rounded bg-smooth-gray">
+                    1230
+                  </span>
+                </div>
+                <div class="d-grid grid__brand-categories">
+                  <input class="" type="checkbox" value="Nike" name="brand-categories">
+                  <label class="form-check-label color-secondary-title label__brand-categories" for="brand-categories">
+                    Nike
+                  </label>
+                  <span class="label__brand-categories p-1 rounded bg-smooth-gray">
+                    542
+                  </span>
+                </div>
+                <div class="d-grid grid__brand-categories">
+                  <input class="" type="checkbox" value="Bloods" name="brand-categories">
+                  <label class="form-check-label color-secondary-title label__brand-categories" for="brand-categories">
+                    Bloods
+                  </label>
+                  <span class="label__brand-categories p-1 rounded bg-smooth-gray">
+                    326
+                  </span>
+                </div>
+                <div class="d-grid grid__brand-categories">
+                  <input class="" type="checkbox" value="Adinda" name="brand-categories">
+                  <label class="form-check-label color-secondary-title label__brand-categories" for="brand-categories">
+                    Adinda
+                  </label>
+                  <span class="label__brand-categories p-1 rounded bg-smooth-gray">
+                    324
+                  </span>
+                </div>
+                <div class="d-grid grid__brand-categories">
+                  <input class="" type="checkbox" value="Everlane" name="brand-categories">
+                  <label class="form-check-label color-secondary-title label__brand-categories" for="brand-categories">
+                    Everlane
+                  </label>
+                  <span class="label__brand-categories p-1 rounded bg-smooth-gray">
+                    90
+                  </span>
+                </div>
+                <div class="d-grid grid__brand-categories">
+                  <input class="" type="checkbox" value="Briliant" name="brand-categories">
+                  <label class="form-check-label color-secondary-title label__brand-categories" for="brand-categories">
+                    Briliant
+                  </label>
+                  <span class="label__brand-categories p-1 rounded bg-smooth-gray">
+                    658
+                  </span>
+                </div>
+                <div class="d-grid grid__brand-categories">
+                  <input class="" type="checkbox" value="ASSID" name="brand-categories">
+                  <label class="form-check-label color-secondary-title label__brand-categories" for="brand-categories">
+                    ASSID
+                  </label>
+                  <span class="label__brand-categories p-1 rounded bg-smooth-gray">
+                    3957
+                  </span>
+                </div>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

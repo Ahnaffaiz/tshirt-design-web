@@ -1,0 +1,93 @@
+// For All
+.d-grid {
+  display: grid;
+}
+
+.btn-filter {
+  background: $secondary-color;
+  color: $secondary-main-color;
+  font-weight: bold;
+}
+
+.color-secondary-title {
+  color: $secondary-title-color;
+}
+
+.bg-smooth-gray {
+  background-color: $smooth-gray;
+}
+
+// Navbar
+.navbar__shadow {
+  box-shadow: 0 1px 6px 0 rgba($main-color, 0.28);
+}
+
+.nav-item {
+  font-family: $primary-font;
+}
+
+
+// Filter
+.h6__search-filter {
+  font-family: $secondary-font;
+}
+
+.h6__search-filter::before {
+  content: '|';
+  color: $secondary-color;
+  padding-right: 1rem;
+}
+
+// Price
+.grid__price-filter {
+  grid-template-columns: 4fr 1fr 4fr;
+  * {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+// Shirt Category
+.grid__shirt-categories, .grid__brand-categories {
+  grid-template-columns: 0.55fr 5fr 1fr;
+  margin: 0.5rem 0 0.5rem;
+  * {
+    align-self: center; 
+  }
+  :last-child {
+    text-align: center;
+  }
+}
+
+.label__shirt-categories, .label__brand-categories {
+  font-size: 14px;
+}
+
+// Product List
+.section__product-list {
+  @media (min-width: 992px) {
+    border-left: 0.1rem $smooth-gray solid;
+  }
+}
+
+// Product Filter
+.grid__product-filter {
+  @media (min-width: 320px) {
+    grid-template-columns: 0.5fr 1fr 2fr ;
+    * {
+      align-self: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+  }
+  @media (min-width:640px) {
+    grid-template-columns: 1fr 2fr 6fr ;
+    * {
+      font-size: 1rem;
+    }
+  }
+  .sortby__product-filter::after {
+    content: '—';
+    padding-left: 0.5rem;
+  }
+}

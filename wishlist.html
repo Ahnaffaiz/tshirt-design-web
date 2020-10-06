@@ -1,32 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="frontend/styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="frontend/images/ic_logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TShirtHome - The Biggest Tshirt Store</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="frontend/images/ic_logo.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/styles/style.css">
+    <link rel="stylesheet" href="frontend/styles/main.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Own JS -->
+    <script src="js/script.js"></script>
+    <!-- Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-        <!-- breadcrumb -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top navbar__shadow">
         <div class="container">
-            <div class="row">
-                <div class="col p-0">
-                    <nav>
-                        <ol class="breadcrumb bg-transparent">
-                            <li class="breadcrumb-item">Shop</li>
-                            <li class="breadcrumb-item">Details</li>
-                            <li class="breadcrumb-item active">Whislist</li>
-                        </ol>
-                    </nav>
-                </div>
+            <a class="navbar-brand" href="#">
+                <img src="frontend/images/logo-dark.png" alt="Logo TSHIRTHOME">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <!-- Centered Nav -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#">Wishlist</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- Lefted Nav -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-user-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+    <!-- breadcrumb -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col p-0">
+                <nav>
+                    <ol class="breadcrumb bg-transparent">
+                        <li class="breadcrumb-item">Shop</li>
+                        <li class="breadcrumb-item">Details</li>
+                        <li class="breadcrumb-item active">Whislist</li>
+                    </ol>
+                </nav>
             </div>
         </div>
-        <!-- end of breadcrumb -->
+    </div>
+    <!-- end of breadcrumb -->
     <section class="whislist">
         <div class="container">
             <div class="row">

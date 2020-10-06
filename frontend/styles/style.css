@@ -1,0 +1,96 @@
+@charset "UTF-8";
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  color: #282828;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.btn-filter {
+  background: #F9C615;
+  color: #3D3D3D;
+  font-weight: bold;
+}
+
+.color-secondary-title {
+  color: #828282;
+}
+
+.bg-smooth-gray {
+  background-color: #DFDFDF;
+}
+
+.navbar__shadow {
+  box-shadow: 0 1px 6px 0 rgba(40, 40, 40, 0.28);
+}
+
+.nav-item {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.h6__search-filter {
+  font-family: "Poppins", sans-serif;
+}
+
+.h6__search-filter::before {
+  content: "|";
+  color: #F9C615;
+  padding-right: 1rem;
+}
+
+.grid__price-filter {
+  grid-template-columns: 4fr 1fr 4fr;
+}
+.grid__price-filter * {
+  justify-self: center;
+  align-self: center;
+}
+
+.grid__shirt-categories, .grid__brand-categories {
+  grid-template-columns: 0.55fr 5fr 1fr;
+  margin: 0.5rem 0 0.5rem;
+}
+.grid__shirt-categories *, .grid__brand-categories * {
+  align-self: center;
+}
+.grid__shirt-categories :last-child, .grid__brand-categories :last-child {
+  text-align: center;
+}
+
+.label__shirt-categories, .label__brand-categories {
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .section__product-list {
+    border-left: 0.1rem #DFDFDF solid;
+  }
+}
+
+@media (min-width: 320px) {
+  .grid__product-filter {
+    grid-template-columns: 0.5fr 1fr 2fr;
+  }
+  .grid__product-filter * {
+    align-self: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+}
+@media (min-width: 640px) {
+  .grid__product-filter {
+    grid-template-columns: 1fr 2fr 6fr;
+  }
+  .grid__product-filter * {
+    font-size: 1rem;
+  }
+}
+.grid__product-filter .sortby__product-filter::after {
+  content: "—";
+  padding-left: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
