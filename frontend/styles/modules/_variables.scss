@@ -16,6 +16,7 @@ $secondary-title-color: #828282;
 $secondary-title-color-rgb: 130, 130, 130;
 $red: #F50000;
 $red-rgb: 245, 0, 0;
+$purple-color: #4A3F13;
 $secondary-red: #FDF3F5;
 $secondary-red-rgb: 253, 243, 245;
 $success: #02B714;
@@ -25,3 +26,7 @@ $white-rgb: 255, 255, 255;
 $smooth-gray: #DFDFDF;
 $smooth-gray-rgb: 223, 223, 223;
 
+/*Mixin*/
+@mixin soft-shadow($position) {
+	box-shadow: rgba(0, 0, 0, 0.05) $position;
+}

@@ -7,6 +7,93 @@
         font-size: 14px;
         }
     }
+    .container__product-list {
+        :hover {
+            text-decoration: none;
+        }
+        .label__product-list {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            margin-left: 20px;
+        }
+        .wishlist__product-list {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            border: 0;
+            background: none;
+            transition: all 0.25s;
+            img {
+                height: 36px;
+                width: 36px;
+            }
+            :hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .item__product-list {
+        a:hover {
+            @include soft-shadow(4px 4px 4px 0px);
+        }
+    }
+    .body__product-list {
+        * {
+            font-family: $secondary-font;
+        }
+        .title__product-list {
+            font-weight: normal;
+            font-size: 1rem;
+            color: $main-color;
+        }
+        .price__product-list {
+            :first-child {
+                font-size: 12px;
+                color: $success;
+                font-weight: 500;
+            }
+            :last-child {
+                font-size: 10px;
+                color: $secondary-title-color;
+                font-weight: normal;
+                text-decoration: line-through;
+            }
+        }
+        .color__product-list, .rate__product-list {
+            display: flex;
+            justify-content: space-around;
+            font-size: 12px;
+        }
+        .color__product-list {
+            top: 0;
+            :nth-child(1) {
+                color: $purple-color;
+            }
+            :nth-child(2) {
+                color: $red;
+            }
+            :nth-child(3) {
+                color: $primary-title-color;
+            }
+            :nth-child(4) {
+                color: $success;
+            }
+        }
+        .rate__product-list {
+            margin-top: 1rem;
+            .rated {
+                color: $secondary-color;
+            }
+            .no-rated {
+                color: $smooth-gray;
+            }
+        }
+    }
   }
 
 @media (min-width:640px) {

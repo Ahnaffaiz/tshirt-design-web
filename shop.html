@@ -68,7 +68,7 @@
     </nav>
     <!-- Main Content -->
     <main class="mt-5 mb-5">
-      <div class="container pt-5 pb-5">
+      <div class="container-fluid pt-5 pb-5 pl-md-5 pr-md-5 pl-3 pr-3">
         <div class="row pt-5">
           <!-- Product List -->
           <section class="col-lg-8 ml-lg-5 pl-lg-5 order-lg-2 mb-5 section__product-list">
@@ -99,31 +99,270 @@
               </select>
             </div>
             <!-- Product List -->
-            <div class="featured-products row">
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="card mx-2 my-2 product-items">
-                  <img src="frontend/images/ic_whishlist.png" alt="" class="ic-wishlist">
-                  <img src="frontend/images/label_blue.svg" alt="" class="ic-label">
-                  <img src="frontend/images/item-4.jpg" alt="" class="card-img-top" style="position: relative;">
-                  <div class="card-body">
+            <div class="container__product-list row">
+              <!-- Product Item -->
+              <div class="col-sm-6 col-xl-4 item__product-list">
+                <a href="#" class="card border-0 mx-2 my-2" title="3Second New">
+                  <!-- Product Label -->
+                  <div class="label__product-list">
+                    <img src="frontend/images/label_red.svg" alt="15% Discount">
+                  </div>
+                  <!-- Wishlist Button -->
+                  <button class="wishlist__product-list" title="Add to wishlist">
+                    <img src="frontend/images/ic_whishlist.png">
+                  </button>
+                  <!-- Product Image -->
+                  <img src="frontend/images/item-1.jpg" alt="3Second New" class="card-img-top position-relative">
+                  <!-- Product Body -->
+                  <div class="card-body pl-1 pr-1 body__product-list">
                     <div class="row">
-                      <div class="col-8 col-lg-7 col-sm-6">
-                        <h5>3Second New</h5>
-                        <p>Rp 162.500 <span>Rp 250.000</span></p>
+                      <div class="col-8 col-lg-8 col-sm-6">
+                        <h5 class="title__product-list">3Second New</h5>
+                        <p class="price__product-list">
+                          <!-- Current Price -->
+                          <span>Rp 162.500</span>
+                          <!-- Old Price -->
+                          <span>Rp 250.000</span>
+                        </p>
                       </div>
-                      <div class="col-4 col-lg-5 col-sm-6">
-                        <div class="row">
-                          <div class="col text-right">
-                            <img src="frontend/images/color.png" alt="" style="max-height:16px">
-                          </div>
-                          <div class="col text-right">
-                            <img src="frontend/images/rate.png" alt="" style="max-height:10px">
-                          </div>
+                      <div class="col-4 col-lg-4 col-sm-6 pl-0">
+                        <div class="color__product-list">
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="rate__product-list">
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
+              </div>
+              <!-- Product Item -->
+              <div class="col-sm-6 col-xl-4 item__product-list">
+                <a href="#" class="card border-0 mx-2 my-2" title="Men T-Shirt Blk">
+                  <!-- Product Label -->
+                  <div class="label__product-list">
+                    <img src="frontend/images/label_red.svg" alt="15% Discount">
+                  </div>
+                  <!-- Wishlist Button -->
+                  <button class="wishlist__product-list" title="Add to wishlist">
+                    <img src="frontend/images/ic_whishlist.png">
+                  </button>
+                  <!-- Product Image -->
+                  <img src="frontend/images/item-2.jpg" alt="Men T-Shirt Blk" class="card-img-top position-relative">
+                  <!-- Product Body -->
+                  <div class="card-body pl-1 pr-1 body__product-list">
+                    <div class="row">
+                      <div class="col-8 col-lg-8 col-sm-6">
+                        <h5 class="title__product-list">Men T-Shirt Blk</h5>
+                        <p class="price__product-list">
+                          <!-- Current Price -->
+                          <span>Rp 125.500</span>
+                          <!-- Old Price -->
+                          <span>Rp 178.000</span>
+                        </p>
+                      </div>
+                      <div class="col-4 col-lg-4 col-sm-6 pl-0">
+                        <div class="color__product-list">
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="rate__product-list">
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star-half rated"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Product Item -->
+              <div class="col-sm-6 col-xl-4 item__product-list">
+                <a href="#" class="card border-0 mx-2 my-2" title="Women U-Shirt Navy">
+                  <!-- Product Label -->
+                  <div class="label__product-list">
+                    <img src="frontend/images/label_blue.svg" alt="New product">
+                  </div>
+                  <!-- Wishlist Button -->
+                  <button class="wishlist__product-list" title="Add to wishlist">
+                    <img src="frontend/images/ic_whishlist.png">
+                  </button>
+                  <!-- Product Image -->
+                  <img src="frontend/images/item-3.jpg" alt="Women U-Shirt Navy" class="card-img-top position-relative">
+                  <!-- Product Body -->
+                  <div class="card-body pl-1 pr-1 body__product-list">
+                    <div class="row">
+                      <div class="col-8 col-lg-8 col-sm-6">
+                        <h5 class="title__product-list">Women U-Shirt Navy</h5>
+                        <p class="price__product-list">
+                          <!-- Current Price -->
+                          <span>Rp 125.500</span>
+                          <!-- Old Price -->
+                          <span>Rp 178.000</span>
+                        </p>
+                      </div>
+                      <div class="col-4 col-lg-4 col-sm-6 pl-0">
+                        <div class="color__product-list">
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="rate__product-list">
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star no-rated"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Product Item -->
+              <div class="col-sm-6 col-xl-4 item__product-list">
+                <a href="#" class="card border-0 mx-2 my-2" title="3Second Yellow">
+                  <!-- Product Label -->
+                  <div class="label__product-list">
+                    <img src="frontend/images/label_blue.svg" alt="New product">
+                  </div>
+                  <!-- Wishlist Button -->
+                  <button class="wishlist__product-list" title="Add to wishlist">
+                    <img src="frontend/images/ic_whishlist.png">
+                  </button>
+                  <!-- Product Image -->
+                  <img src="frontend/images/item-4.jpg" alt="3Second Yellow" class="card-img-top position-relative">
+                  <!-- Product Body -->
+                  <div class="card-body pl-1 pr-1 body__product-list">
+                    <div class="row">
+                      <div class="col-8 col-lg-8 col-sm-6">
+                        <h5 class="title__product-list">3Second Yellow</h5>
+                        <p class="price__product-list">
+                          <!-- Current Price -->
+                          <span>Rp 156.000</span>
+                          <!-- Old Price -->
+                          <span>Rp 245.000</span>
+                        </p>
+                      </div>
+                      <div class="col-4 col-lg-4 col-sm-6 pl-0">
+                        <div class="color__product-list">
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="rate__product-list">
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Product Item -->
+              <div class="col-sm-6 col-xl-4 item__product-list">
+                <a href="#" class="card border-0 mx-2 my-2" title="3Second Blk">
+                  <!-- Product Label -->
+                  <div class="label__product-list">
+                    <img src="frontend/images/label_red.svg" alt="15% Discount">
+                  </div>
+                  <!-- Wishlist Button -->
+                  <button class="wishlist__product-list" title="Add to wishlist">
+                    <img src="frontend/images/ic_whishlist.png">
+                  </button>
+                  <!-- Product Image -->
+                  <img src="frontend/images/item-5.jpg" alt="3Second Blk" class="card-img-top position-relative">
+                  <!-- Product Body -->
+                  <div class="card-body pl-1 pr-1 body__product-list">
+                    <div class="row">
+                      <div class="col-8 col-lg-8 col-sm-6">
+                        <h5 class="title__product-list">3Second Blk</h5>
+                        <p class="price__product-list">
+                          <!-- Current Price -->
+                          <span>Rp 98.000</span>
+                          <!-- Old Price -->
+                          <span>Rp 156.000</span>
+                        </p>
+                      </div>
+                      <div class="col-4 col-lg-4 col-sm-6 pl-0">
+                        <div class="color__product-list">
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="rate__product-list">
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star-half rated"></i>
+                          <i class="fa fa-star no-rated"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Product Item -->
+              <div class="col-sm-6 col-xl-4 item__product-list">
+                <a href="#" class="card border-0 mx-2 my-2" title="Orange T-Shirt">
+                  <!-- Product Label -->
+                  <div class="label__product-list">
+                    <img src="frontend/images/label_red.svg" alt="15% Discount">
+                  </div>
+                  <!-- Wishlist Button -->
+                  <button class="wishlist__product-list" title="Add to wishlist">
+                    <img src="frontend/images/ic_whishlist.png">
+                  </button>
+                  <!-- Product Image -->
+                  <img src="frontend/images/item-6.jpg" alt="Orange T-Shirt" class="card-img-top position-relative">
+                  <!-- Product Body -->
+                  <div class="card-body pl-1 pr-1 body__product-list">
+                    <div class="row">
+                      <div class="col-8 col-lg-8 col-sm-6">
+                        <h5 class="title__product-list">Orange T-Shirt</h5>
+                        <p class="price__product-list">
+                          <!-- Current Price -->
+                          <span>Rp 180.000</span>
+                          <!-- Old Price -->
+                          <span>Rp 210.000</span>
+                        </p>
+                      </div>
+                      <div class="col-4 col-lg-4 col-sm-6 pl-0">
+                        <div class="color__product-list">
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="rate__product-list">
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star rated"></i>
+                          <i class="fa fa-star-half rated"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </section>
@@ -283,6 +522,41 @@
         </div>
       </div>
     </main>
+    <!-- Footer -->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-4 col-md-4 col-sm text-left align-self-start mb-3">
+            <img src="frontend/images/logo.png" alt="" class="img-fluid">
+            <p class="mt-3">
+              The largest quality T-shirt center in Indonesia. Trusted for more than 10 years to be the pride of Indonesia
+            </p>
+            <img  class="mt-4" src="frontend/images/social_media.png" alt="">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm text-left align-self-start mb-3">
+            <h5>Categories</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Woman</a></li>
+              <li><a href="#">Polo</a></li>
+              <li><a href="#">V-neck</a></li>
+              <li><a href="#">Long Sleeve</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm text-left align-self-start mb-3">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li><a href="#"><span>Email: </span>  cs@tshirthome.com</a></li>
+              <li><a href="#"><span>Nomer: </span> +6287890098000</a></li>
+              <li><a href="#"><span>Address: </span> Jl. Hamengkubuwono 9, Surakarta</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3 copyright">
+        <div class="col text-center"><p>2020 - TshirtHome</p></div>
+      </div>
+    </footer>
     <!-- JS, Popper.js, and jQuery -->
     <script src="frontend/libraries/jquery/jquery-3.5.1.min.js"></script>
     <script src="frontend/libraries/jquery/popper.min.js"></script>
