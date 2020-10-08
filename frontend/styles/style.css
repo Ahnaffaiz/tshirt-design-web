@@ -129,7 +129,44 @@ body {
     .body__product-list .rate__product-list .rated {
       color: #F9C615; }
     .body__product-list .rate__product-list .no-rated {
-      color: #DFDFDF; } }
+      color: #DFDFDF; }
+
+  .breadcrumb__detail a {
+    font-weight: normal;
+    color: #282828; }
+  .breadcrumb__detail ol li:last-child {
+    font-weight: bold; }
+
+  .images-container__detail {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "main main main main" "main main main main" "main main main main" "thumb1 thumb2 thumb3 thumb4";
+    gap: 0.75rem; }
+    .images-container__detail * {
+      max-width: 100%; }
+    .images-container__detail img {
+      border-radius: 0.5rem; }
+    .images-container__detail .main-image__detail {
+      grid-area: main;
+      height: 360px;
+      width: 100%;
+      object-fit: cover; }
+    .images-container__detail .image-thumb-1__detail {
+      grid-area: thumb1; }
+    .images-container__detail .image-thumb-2__detail {
+      grid-area: thumb2; }
+    .images-container__detail .image-thumb-3__detail {
+      grid-area: thumb3; }
+    .images-container__detail .image-thumb-4__detail {
+      grid-area: thumb4; }
+
+  .image-thumb-1__detail, .image-thumb-2__detail, .image-thumb-3__detail, .image-thumb-4__detail {
+    height: 64px; }
+    .image-thumb-1__detail img, .image-thumb-2__detail img, .image-thumb-3__detail img, .image-thumb-4__detail img {
+      object-fit: cover;
+      border: none;
+      margin: 0;
+      padding: 0; } }
 @media (min-width: 640px) {
   .grid__product-filter {
     grid-template-columns: 1fr 2fr 6fr; }
@@ -137,6 +174,14 @@ body {
       font-size: 1rem; } }
 @media (min-width: 992px) {
   .section__product-list {
-    border-left: 0.1rem #DFDFDF solid; } }
+    border-left: 0.1rem #DFDFDF solid; }
+
+  .images-container__detail {
+    grid-template-areas: "thumb1 main main main" "thumb2 main main main" "thumb3 main main main" "thumb4 main main main"; }
+    .images-container__detail .main-image__detail {
+      height: 100%; }
+
+  .image-thumb-1__detail, .image-thumb-2__detail, .image-thumb-3__detail, .image-thumb-4__detail {
+    height: auto; } }
 
 /*# sourceMappingURL=style.css.map */
