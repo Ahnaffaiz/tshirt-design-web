@@ -218,6 +218,7 @@ body {
     grid-template-columns: 1.65fr auto auto;
     gap: 0.5rem; }
     .action__detail * {
+      font-size: 1rem;
       font-weight: 500; }
     .action__detail .buy-action__detail {
       background: #F9C615;
