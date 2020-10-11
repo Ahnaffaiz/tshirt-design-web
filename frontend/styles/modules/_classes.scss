@@ -13,12 +13,24 @@
   color: $secondary-title-color;
 }
 
+.color-purple {
+  color: $purple-color;
+}
+
+.bg-purple {
+  background-color: $purple-color;
+}
+
 .bg-smooth-gray {
   background-color: $smooth-gray;
 }
 
 .bg-second-main {
   background-color: $secondary-main-color;
+}
+
+.secondary-font {
+  font-family: $secondary-font;
 }
 
 // Navbar
@@ -76,5 +88,22 @@
   .sortby__product-filter::after {
     content: '—';
     padding-left: 0.5rem;
+  }
+}
+
+// About Us
+.about {
+  h1, h2, h3, h4, h5 {
+    font-family: $secondary-font;
+  }
+  p {
+    font-family: $primary-font;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  .featured__about {
+    p {
+      color: $secondary-title-color;
+    }
   }
 }
