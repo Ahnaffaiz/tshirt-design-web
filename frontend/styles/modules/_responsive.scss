@@ -86,13 +86,13 @@
         }
         .rate__product-list {
             margin-top: 1rem;
-            .rated {
-                color: $secondary-color;
-            }
-            .no-rated {
-                color: $smooth-gray;
-            }
         }
+    }
+    .rated {
+        color: $secondary-color;
+    }
+    .no-rated {
+        color: $smooth-gray;
     }
     .breadcrumb__detail {
         a {
@@ -144,6 +144,70 @@
             padding: 0;
         }
     }
+    .description__detail {
+        .categories-description__detail, .brand-description__detail, .product-description__detail {
+            font-weight: normal;
+            color: $secondary-title-color;
+        }
+    }
+    .color__detail {
+        h6 {
+            font-size: 14px;
+            color: $main-color;
+        }
+        button {
+            font-size: 2rem;
+        }
+        button:nth-child(2) {
+            color: $purple-color;
+        }
+        button:nth-child(3) {
+            color: $red;
+        }
+        button:nth-child(4) {
+            color: $primary-title-color;
+        }
+        button:nth-child(5) {
+            color: $success;
+        }
+    }
+    .size__detail, .price__detail, .quantity__detail {
+        h6 {
+            font-size: 14px;
+            color: $main-color;
+        }
+    }
+    .quantity__detail {
+        form {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+        }
+    }
+    .action__detail {
+        grid-template-columns: 1.65fr auto auto;
+        gap: 0.5rem;
+        * {
+            font-weight: 500;
+        }
+        .buy-action__detail {
+            background: $secondary-color;
+            color: $white;
+        }
+        .cart-action__detail {
+            border: 2px solid $secondary-color;
+            color: $secondary-color;
+        }
+        .wishlist-action__detail {
+            height: 40px;
+            width: 40px;
+            padding: 0;
+            color: #000000;
+            -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #000000;
+            box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
   }
 
 @media (min-width:640px) {
@@ -167,5 +231,8 @@
     }
     .image-thumb-1__detail, .image-thumb-2__detail, .image-thumb-3__detail, .image-thumb-4__detail {
         height: auto;
+    }
+    .customize__detail {
+        max-width: 70%;
     }
 }
