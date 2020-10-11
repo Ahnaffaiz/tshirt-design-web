@@ -616,6 +616,46 @@ footer .copyright p {
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.login-content p {
+  color: #bdbdbd;
+  font-weight: 300px;
+}
+
+.login-content .card-login {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.login-content h5 {
+  font-size: 30px;
+  font-family: "Source Sans Pro", "sans-serif";
+  margin-top: 20px;
+}
+
+.login-content input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #F9C615;
+}
+
+.login-content input:focus {
+  border-color: #F9C615;
+}
+
+.login-content .btn-login {
+  background-color: #F9C615;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.login-content .btn-login:hover {
+  background-color: #FFD84D;
+  color: white;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

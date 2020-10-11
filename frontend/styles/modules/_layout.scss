@@ -180,5 +180,26 @@ $poppins : 'Poppins';
             font-family: $poppins;
         }
     }
-} 
+}
+
+@mixin form-login {
+    .card-login {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    h5  {
+        font-size: 30px;
+        font-family: $source;
+        margin-top: 20px;
+    }
+    input {
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: $secondaryColor;
+      }
+      input:focus {
+        border-color:$secondaryColor
+      }
+}
 

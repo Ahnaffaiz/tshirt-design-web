@@ -1,0 +1,16 @@
+@import "layout";
+@import "button";
+
+
+.login-content {
+    p {
+        color: $smothgrey;
+        font-weight: 300px;
+    }
+    @include form-login;
+    .btn-login {
+        @include btnPrimary;
+    }
+
+
+}
